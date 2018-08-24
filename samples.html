@@ -68,11 +68,11 @@
 
          <div class="col-sm-3 push-down-3">
             <ul class='nav nav-pills nav-stacked assignments' role='tablist'>
-               <li role='presentation' class='active'><a href='#writing' aria-controls='home' role='tab' data-toggle='tab'>Writing Exercises</a></li>
-               <li role='presentation' class=''><a href='#evaluation' aria-controls='home' role='tab' data-toggle='tab'>Evaluation Arguments</a></li>
-               <li role='presentation' class=''><a href='#local' aria-controls='home' role='tab' data-toggle='tab'>Local Arguments &amp; Open Letters</a></li>
-               <li role='presentation' class=''><a href='#global' aria-controls='home' role='tab' data-toggle='tab'>Global Arguments</a></li>
-               <li role='presentation' class=''><a href='#analysis' aria-controls='home' role='tab' data-toggle='tab'>Analysis Arguments</a></li>
+               <li role='presentation' class='active scroller'><a href='#writing' aria-controls='home' role='tab' data-toggle='tab'>Writing Exercises</a></li>
+               <li role='presentation' class='scroller'><a href='#evaluation' aria-controls='home' role='tab' data-toggle='tab'>Evaluation Arguments</a></li>
+               <li role='presentation' class='scroller'><a href='#local' aria-controls='home' role='tab' data-toggle='tab'>Local Arguments &amp; Open Letters</a></li>
+               <li role='presentation' class='scroller'><a href='#global' aria-controls='home' role='tab' data-toggle='tab'>Global Arguments</a></li>
+               <li role='presentation' class='scroller'><a href='#analysis' aria-controls='home' role='tab' data-toggle='tab'>Analysis Arguments</a></li>
             </ul>
          </div>
 
@@ -81,6 +81,8 @@
             <div class='tab-content'>
                <div role='tabpanel' class='tab-pane active' id='writing'>
 
+
+                  <h4>Writing Exercises</h4>
                   <ul class="sources">
                      <li>Emanuele's <a href="handouts/toulminndshirt.pdf" target="blank">#3: "Wearing an ND Hoodie"</a>
                      </li>
@@ -97,6 +99,7 @@
                </div>
                <div role='tabpanel' class='tab-pane' id='evaluation'>
 
+                  <h4>Evaluation Arguments</h4>
                   <ul class="sources">
                      <li>Andrew's <a href="handouts/andreweval.pdf" target="blank">"Coach Rozea"</a> (written) / <a href="handouts/andreweval.mp3" target="blank"> (audio)</a></li>
                      <li>Anne's <a href="handouts/anneeval.pdf" target="blank">"The Department of Motor Vehicles"</a></li>
@@ -131,10 +134,9 @@
                <div role='tabpanel' class='tab-pane' id='local'>
 
 
-                  <p>Several of the following student essays don't use any outside sources; you must use <em>at least two</em> outside sources somewhere in your Local Argument Essay. We'll talk in class about how to use and cite sources.</p>
-
-
                   <h4>Local Arguments</h4>
+
+                  <p>Several of the following student essays don't use any outside sources; you must use <em>at least two</em> outside sources somewhere in your Local Argument Essay. We'll talk in class about how to use and cite sources.</p>
 
                   <ul class="sources">
                      <li>Andrew's <a href="handouts/localandrew.pdf" target="blank">"Naz Farm"</a>
@@ -184,12 +186,18 @@
 
                   <h4>Open Letters</h4>
 
-
-
+                  <ul class="sources">
+                     <li><a href="http://www.npr.org/2012/03/22/148979521/an-open-letter-about-open-letters" target="blank">"An Open Letter . . . about Open Letters"</a></li>
+                     <li><a href="https://johnpavlovitz.com/2017/08/31/dear-joel-osteen/" target="blank">"Dear Joel Osteen"</a></li>
+                     <li><a href="http://www.miamiherald.com/opinion/opn-columns-blogs/leonard-pitts-jr/article174920101.html" target="blank">"Listen, Jackson, Bullies Don’t Define You--So Don’t Let Them"</a>
+                     </li>
+                     <li><a href="handouts/onhearing.pdf" target="blank">"On Hearing You Might Transfer"</a></li>
+                  </ul>
 
                </div>
                <div role='tabpanel' class='tab-pane' id='global'>
 
+                  <h4>Global Arguments</h4>
                   <ul class="sources">
                      <li>Andrew's <a href="handouts/andrewglobal.pdf" target="blank">"Second Language Acquisition"</a>
                      </li>
@@ -233,6 +241,7 @@
 
                </div>
                <div role='tabpanel' class='tab-pane' id='analysis'>
+                  <h4>Analysis Arguments</h4>
                   <ul class="sources">
                      <li>Trevor's <a href="handouts/kinganalysistrevor.pdf" target="blank">"Preaching to the Clergy"</a>
                      </li>
@@ -286,6 +295,16 @@
                });
 
          });
+
+         // Find all anchor tags (<a>) in which the href attribute has 's-lg-box' in the link
+         function scrollToTopFunction() {
+            $("html, body").animate({
+               scrollTop: 0
+            }, 400);
+         }
+
+         $(".scroller").on("click", scrollToTopFunction);
+
 
       });
       // document.ready
