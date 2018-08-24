@@ -1,0 +1,218 @@
+html {
+   font-size: 16px;
+}
+
+body {
+   font-family: "Open Sans", Arial, sans-serif;
+   height: 100%;
+}
+
+p, td, th, li, blockquote, dl, dd, dt {
+   font-size: 1rem;
+}
+
+p {
+   line-height: 1.6em;
+   margin-bottom: 1rem;
+}
+
+.container h1, .container h2, .container h3, .container h4, .container h5, .container h6 {
+   color: #002a5d;
+   font-weight: 600;
+   /* margin: 2rem 0 1rem 0 !important; */
+}
+
+.navbar-brand {
+   font-size: 1.4rem;
+   color: #0C2340 !important;
+}
+
+.navbar-nav li a {
+   color: #0C2340 !important;
+}
+
+#head-shot {
+   min-width: 100%;
+}
+
+.navbar-brand:hover, li.dropdown a:hover, li.dropdown a:active, li.dropdown a:visited, li.dropdown a:focus, .navbar-nav li a:hover {
+   background: gainsboro !important;
+}
+
+.navbar {
+   padding: 2rem;
+}
+
+#nd-header {
+   background-color: #002a5d !important;
+   min-height: 50px;
+}
+
+/* colors  ----------------------------------------------------------------- */
+
+h1.ndblue, h2.ndblue, h3.ndblue, h4.ndblue, h5.ndblue, h6.ndblue {
+   color: #0C2340 !important;
+}
+
+blockquote {
+   background: aliceblue;
+   color: #31708f;
+   font-style: italic;
+   margin-top: 1.5rem;
+   margin-bottom: 1.5rem;
+}
+
+.main-content li {
+   margin-bottom: 1rem;
+}
+
+blockquote cite {
+   font-style: normal;
+}
+
+blockquote>cite:before {
+   content: "—";
+}
+
+.grey {
+   color: gray !important;
+}
+
+.assignments li a small {
+   color: lightsteelblue !important;
+}
+
+#nd-link, #provost-link, .garamond {
+   font-family: 'EB Garamond', serif;
+}
+
+#nd-link a, #provost-link a {
+   letter-spacing: .3rem;
+   color: white;
+   cursor: pointer;
+   text-decoration: none;
+}
+
+#nd-link a:hover, #provost-link a:hover, #about-project:hover, #about-resources:hover {
+   color: lightgrey;
+}
+
+#nd-link, #provost-link {
+   padding-top: .75rem !important;
+}
+
+.navbar-inverse {
+   background: whitesmoke;
+   border: none;
+   border-radius: 0px;
+}
+
+.push-down-1 {
+   margin-top: 1rem !important;
+}
+
+.push-down-2 {
+   margin-top: 2rem !important;
+}
+
+.push-down-3 {
+   margin-top: 3rem !important;
+}
+
+footer {
+   padding: 3rem;
+   margin-top: 3rem;
+   background: #f5f5f5;
+}
+
+#footer-links {
+   list-style-type: none;
+   text-align: center;
+}
+
+#footer-links li {
+   display: inline;
+   margin-right: 1.2rem;
+}
+
+.dropdown-menu>.disabled>a, .dropdown-menu>.disabled>a:focus, .dropdown-menu>.disabled>a:hover {
+   color: lightgray !important;
+}
+
+.publications {
+   list-style-type: none;
+   padding: 0;
+   margin: 1rem 0;
+}
+
+.publications li {
+   text-indent: -2rem;
+   margin-left: 2rem;
+   margin-bottom: 1.5rem;
+   padding: .3rem;
+}
+
+#comment-codes-panel {
+   height: 5rem;
+   padding-top: 2rem;
+}
+
+.main-content h3 {
+   margin-top: 3rem;
+}
+
+.main-content h3:first-of-type {
+   margin-top: 0px;
+}
+
+.main-content dl {
+   margin-top: 3rem;
+}
+
+.main-content dl:first-of-type {
+   margin-top: 0px;
+}
+
+.comment-codes td:first-of-type {
+   font-weight: 600;
+   width: 40px;
+}
+
+.comment-codes .table>tbody>tr:first-of-type>td {
+   border-top: 0px !important;
+}
+
+.panel-heading .accordion-toggle:before {
+   /* symbol for "opening" panels */
+   font-family: FontAwesome;
+   /* essential for enabling glyphicon */
+   content: "\f068";
+   /* adjust as needed, taken from bootstrap.css */
+   float: right;
+   /* adjust as needed */
+   color: lightsteelblue;
+   /* adjust as needed */
+}
+
+.panel-heading .accordion-toggle.collapsed:before {
+   /* symbol for "collapsed" panels */
+   content: "\f067";
+   /* adjust as needed, taken from bootstrap.css */
+   color: lightsteelblue;
+}
+
+.sources {
+   list-style-type: none;
+   margin-left: 0;
+   padding-left: 1rem;
+   margin-top: 1rem;
+}
+
+.sources li {
+   padding: .5rem;
+   margin:0;
+}
+
+.sources li:nth-child(odd) {
+   background: #f5f5f5;
+}
