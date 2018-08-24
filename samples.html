@@ -274,19 +274,21 @@
    <script>
       $(document).ready(function() {
 
-               $("#assignments").addClass("active");
+         $("#assignments").addClass("active");
 
-               // In-page sccroll-to links
-               $("a[role='presentation']").click(function(event) {
-                     event.preventDefault();
-                     $("html, body").animate({
-                           scrollTop: $("#top"
-                           },
-                           400);
-                     });
-
+         // In-page sccroll-to links
+         $("a[role='presentation']").click(function(event) {
+               event.preventDefault();
+               $("html, body").animate({
+                     scrollTop: $("#top"
+                     },
+                     400);
                });
-            // document.ready
+
+         });
+
+      });
+      // document.ready
    </script>
 
 
