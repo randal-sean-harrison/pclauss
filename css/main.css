@@ -5,6 +5,7 @@ html {
 body {
    font-family: "Open Sans", Arial, sans-serif;
    height: 100%;
+   font-size: 16px;
 }
 
 p, td, th, li, blockquote, dl, dd, dt {
@@ -21,6 +22,7 @@ p {
    font-weight: 600;
    /* margin: 2rem 0 1rem 0 !important; */
 }
+
 
 .navbar-brand {
    font-size: 1.4rem;
@@ -63,8 +65,10 @@ blockquote {
 }
 
 .main-content li {
-   margin-bottom: 1rem;
+   margin-bottom: .5rem;
+
 }
+
 
 blockquote cite {
    font-style: normal;
@@ -148,7 +152,7 @@ footer {
 .publications li {
    text-indent: -2rem;
    margin-left: 2rem;
-   margin-bottom: 1.5rem;
+   margin-bottom: -.5rem;
    padding: .3rem;
 }
 
@@ -215,4 +219,20 @@ footer {
 
 .sources li:nth-child(odd) {
    background: #f5f5f5;
+}
+#aristotle {
+width:300px;
+float:left;
+border:1px solid grey;
+padding:3px;
+margin:0 10px 10px 0;
+
+}
+
+ul ol {
+  margin-top: .5rem !important;
+}
+
+ol ul {
+  margin-top: .5rem !important;
 }

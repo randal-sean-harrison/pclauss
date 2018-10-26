@@ -24,7 +24,6 @@
    <!-- Main style sheet css -->
    <link rel="stylesheet" href="css/main.css">
 
-
 </head>
 
 <body id="top">
@@ -55,8 +54,10 @@
 
          <div class="col-sm-12">
 
-            <p>The student essays and exercises linked to here were written by previous WR students, all of whom have given me permission to share their work. In most cases, unless the student asked me not to, I have changed all names and all other identifying
-               information. I have not changed identifying information in cases where sources are cited and the sources can be located online, in a library, etc. Note that these essays are not necessarily "perfect." Most of them are very good, but several
+            <p>The student essays and exercises linked to here were written by previous WR students, all of whom have given me permission to share their work. In most cases, unless the student asked me not to, I have changed all names and all other
+               identifying
+               information. I have not changed identifying information in cases where sources are cited and the sources can be located online, in a library, etc. Note that these essays are not necessarily "perfect." Most of them are very good, but
+               several
                are included to spur class discussion and reflection. (Some are models, quite frankly, of potentially good writing, but writing that needed serious revision.)</p>
 
             <div class="alert alert-warning">
@@ -281,35 +282,14 @@
    <script src="js/main.js"></script>
 
    <script>
+
       $(document).ready(function() {
 
-         $("#assignments").addClass("active");
-
-         // In-page sccroll-to links
-         $("a[role='presentation']").click(function(event) {
-               event.preventDefault();
-               $("html, body").animate({
-                     scrollTop: $("#top"
-                     },
-                     400);
-               });
-
-         });
-
-         // Find all anchor tags (<a>) in which the href attribute has 's-lg-box' in the link
-         function scrollToTopFunction() {
-            $("html, body").animate({
-               scrollTop: 0
-            }, 400);
-         }
-
-         $(".scroller").on("click", scrollToTopFunction);
-
-
+         // adds the active state to the button in the nav
+         $("#samples").addClass("active");
       });
-      // document.ready
-   </script>
 
+   </script>
 
 </body>
 
